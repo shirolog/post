@@ -1,0 +1,168 @@
+/** @format */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  outline: 0;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  white-space: no-wrap;
+}
+
+.btn {
+  padding: 0.2rem 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.empty {
+  font-size: 1.8rem;
+}
+
+.flex {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 17vh);
+  flex-wrap: wrap;
+}
+
+.form-container form {
+  background: rgb(187, 187, 249);
+  max-width: 50rem;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  overflow: hidden;
+}
+
+.form-container form div {
+  flex: 1 1 40rem;
+  overflow: hidden;
+}
+
+.form-container form div p {
+  font-size: 1.8rem;
+  margin: 0.7rem 0;
+}
+
+
+
+.form-container form div textarea {
+  resize: none;
+  width: 100%;
+}
+
+.form-container form p {
+  font-size: 1.7rem;
+  margin: 0.5rem 0;
+}
+
+.form-container form div .title::before {
+  content: "";
+  border-left: 5px solid blue;
+  margin-right: 0.5rem;
+}
+
+.form-container form p span {
+  color: #fff;
+  background: red;
+  margin-left: 0.5rem;
+}
+
+.form-container form span {
+  font-size: 1.7rem;
+  word-wrap: break-word;
+}
+
+.form-container form span a:hover{
+  text-decoration: underline;
+}
+
+p {
+  width: 100%;
+}
+
+.msg {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+  border-top: 0.1rem solid #4286f4;
+}
+
+.msg p {
+  text-overflow: ellipsis;
+  overflow-x: hidden;
+}
+
+.msg .flex p a {
+  color: blue;
+}
+
+.msg:not(:first-child) {
+  padding-top: 1rem;
+}
+
+
+
+.flex-page {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.flex-page a {
+  font-size: 1.7rem;
+}
+
+.flex-page a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+
+  .flex-page {
+    flex-flow: column;
+  }
+}
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+
+  .msg .flex p a {
+    display: block;
+    width: 100%;
+  }
+}
