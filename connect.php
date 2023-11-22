@@ -3,7 +3,7 @@
 try {
     $dbname = 'mysql:host=localhost;dbname=mini_bbs';
     $user_name = 'root';
-    $password = 'HTMLCSS1728';
+    $password = '';
 
     $conn = new PDO($dbname, $user_name, $password);
 
