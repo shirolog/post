@@ -43,7 +43,7 @@ if(isset($_GET['delete_id'])){
         <form action="" method="post">
 
 
-            <h3>ひとこと掲示板。</h3>
+            <h3>『ひとこと掲示板。』</h3>
             <p style="font-size: 1.5rem;">&laquo;<a style="padding-left: .7rem;" href="./home.php">一覧に戻る</a></p>
 
             <?php 
